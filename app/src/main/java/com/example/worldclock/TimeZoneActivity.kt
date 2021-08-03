@@ -4,9 +4,6 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
-import com.example.worldclock.databinding.ActivityMainBinding
 import com.example.worldclock.databinding.ActivityTimeZoneBinding
 
 class TimeZoneActivity : AppCompatActivity() {
@@ -27,7 +24,6 @@ class TimeZoneActivity : AppCompatActivity() {
 
         list.setOnItemClickListener { parent, view, position, id ->
             val timeZone = adapter.getItem(position)
-            Log.d("TimeZoneActivity", "${timeZone}")
             val result = Intent()
             result.putExtra("timeZone", timeZone)
             setResult(Activity.RESULT_OK, result)
