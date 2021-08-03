@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".TimeZoneActivity">
 
+    <ListView
+        android:id="@+id/timeZoneClockList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/list_time_zone_row" />
 </androidx.constraintlayout.widget.ConstraintLayout>
